@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+    .attribution { font-size: 11px; text-align: center; color: ;}
+    .attribution a { color: hsl(228, 45%, 44%); text-decoration: none;}
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      background: hsl(217, 54%, 11%);
+      font-family: outfit;
+      color: hsl(0, 0%, 100%);
+    }
+    .main_bg {
+      height: 100vh;
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    .card {
+      background: hsl(216, 50%, 16%);
+      margin: auto;
+      padding: 20px;
+      border-radius: 20px;
+    }
+    .image_div {
+      position: relative;
+    }
+    .main_img {
+      height: 270px;
+      border-radius: 10px;
+      display: block;
+      
+    }
+    .card_img:hover {
+      background: hsl(178, 100%, 50%);
+      cursor: pointer;
+    }
+    .first_para {
+      color: hsl(0, 0%, 100%);
+      font-size: 22px;
+      margin-top: 20px;
+      font-weight: 600;
+      
+    }
+    .first_para:hover {
+      color: hsl(178, 100%, 50%);
+      cursor: pointer;
+    }
+    .second_para {
+      width: 270px;
+      color: hsl(215, 51%, 70%);
+      margin-top: 10px;
+    }
+    .values {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 10px;
+    }
+    hr {
+      margin-top: 10px;
+      border-top: 1px solid;
+      border-color: hsl(215, 32%, 27%);
+    }
+    .values span{
+      margin-right: 8px;
+    }
+    .p1 {
+      color: hsl(178, 100%, 50%);
+      display: flex;
+    }
+    .p2 {
+      color: hsl(215, 51%, 70%);
+      display: flex;
+    }
+    .credit {
+      padding-top: 10px;
+      display: flex;
+      align-items: center;
+    }
+    .credit img{
+      height: 30px;
+      margin-right: 10px;
+    }
+    .credit span {
+      color: hsl(215, 51%, 70%);
+    }
+    .credit p:hover {
+      color: hsl(178, 100%, 50%);
+      cursor: pointer;
+    }
+    .overlay1 {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      border-radius: 10px;
+      background: hsla(178, 100%, 50%, 0.4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: 0.6s;
+    }
+    .overlay1 img{
+      height: 50px;
+    }
+    .overlay1:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="main_bg">
+    <div class="card">
+        <div class="image_div">
+          <img  class="main_img" src="./images/image-equilibrium.jpg">
+          <div class="overlay1">
+            <img class="overlay" src="./images/icon-view.svg">
+          </div>
+        </div>
+        <p class="first_para">Equilibrium #3429</p>
+        <p class="second_para">Our Equilibrium collection promotes balance and calm.</p>
+      <div class="values">
+        <p class="p1"><span><img src="./images/icon-ethereum.svg"></span>0.041 ETH</p>
+        <p class="p2"><span><img src="./images/icon-clock.svg"></span>3 days left</p>
+      </div>
+      <hr>
+      <div class="credit">
+        <img src="./images/image-avatar.png">
+        <p><span>Creation of</span> Jules Wyvern</p>
+      </div>
+    </div>
+    
+  </div>
+  
+
+  
+  
+  
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Odilu Silvester</a>.
+  </div>
+</body>
+</html>
